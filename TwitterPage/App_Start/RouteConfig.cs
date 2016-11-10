@@ -15,15 +15,15 @@ namespace TwitterPage
 
             routes.MapRoute(
                 name: "FileProvider",
-                url: "images/{name}",
+                url: "people/{name}",
                 defaults: new { controller = "File", action = "GetFile" }
                 );
 
-            ////routes.MapRoute(
-            ////    name: "Default",
-            ////    url: "{controller}/{action}/{id}",
-            ////    defaults: new { controller = "Main", action = "Index", id = UrlParameter.Optional }
-            ////);
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Main", action = "Index", id = UrlParameter.Optional }
+            );
 
 
 
